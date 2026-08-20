@@ -1,4 +1,4 @@
-version: 1.0.0
+version: "1.0"
 info:
   model: int-scaffold
 packages:
@@ -24,6 +24,10 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.1069
+- serviceName: project.flow_git_sk_3.integrations:release
+  packages:
+  - name: FLOW_Git_SK_3Project
+    version: 1.0.0
 configurationVariables:
-  jdbcfunc.SAPTxStore.failFastMode: "false"
+  jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
