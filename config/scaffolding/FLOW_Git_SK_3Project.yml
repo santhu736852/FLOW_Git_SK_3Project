@@ -16,6 +16,14 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.1069
+- serviceName: project.flow_git_sk_3.integrations:DAF2
+  packages:
+  - name: FLOW_Git_SK_3Project
+    version: "1.0"
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1069
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
