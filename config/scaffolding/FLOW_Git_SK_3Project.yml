@@ -7,6 +7,11 @@ packages:
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
   gitBranch: release/1.0.1
+- name: Package2
+  gitServerName: GH_SK
+  gitUrl: https://github.com/santhu736852/monoRepoTetst
+  gitUsername: santhu736852
+  gitBranch: main
 services:
 - serviceName: project.flow_git_sk_3.integrations:DAF1
   packages:
