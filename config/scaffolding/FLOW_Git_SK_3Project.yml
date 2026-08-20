@@ -1,29 +1,29 @@
-version: "1.0"
+configurationVariables:
+  jdbcfunc.SAPTxStore.failFastMode: 'false'
+  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
 info:
   model: int-scaffold
 packages:
-- name: FLOW_Git_SK_3Project
+- gitBranch: main
   gitServerName: GH_SK
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
-  gitBranch: main
+  name: FLOW_Git_SK_3Project
 services:
-- serviceName: project.flow_git_sk_3.integrations:DAF1
-  packages:
+- packages:
   - name: FLOW_Git_SK_3Project
-    version: "1.0"
-- serviceName: pub.date:getCurrentDate
-  packages:
+    version: 1.1.0
+  serviceName: project.flow_git_sk_3.integrations:DAF1
+- packages:
   - name: WmPublic
     version: 12.1.0.0.1069
-- serviceName: project.flow_git_sk_3.integrations:DAF2
-  packages:
+  serviceName: pub.date:getCurrentDate
+- packages:
   - name: FLOW_Git_SK_3Project
-    version: "1.0"
-- serviceName: pub.date:currentNanoTime
-  packages:
+    version: 1.1.0
+  serviceName: project.flow_git_sk_3.integrations:DAF2
+- packages:
   - name: WmPublic
     version: 12.1.0.0.1069
-configurationVariables:
-  jdbcfunc.SAPTxStore.failFastMode: false
-  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
+  serviceName: pub.date:currentNanoTime
+version: '1.0'
